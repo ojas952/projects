@@ -30,6 +30,14 @@ class passwordGenerator {
 
 		//Print out the random passwords array
 		printArray(randomPasswords);
+	  
+	  	//print out the strength of the password
+	 	 if(length<=5)
+			System.out.println("Password Strength: Weak");
+		else if(length>=5 && length<8)
+			System.out.println("Password Strength: Medium");
+		else
+			System.out.println("Password Strength: Good");
 
   }
 
