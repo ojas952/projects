@@ -1,0 +1,87 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a29bfe;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    margin: 1.5rem;
+    font-size: calc(3rem + 1.5vw);
+    color: greenyellow;
+    font-weight: 800;
+}
+
+.details {
+    text-align: center;
+}
+
+.loaderMain {
+    display: none;
+}
+
+.loader {
+    width: 10px;
+    height: 30px;
+    background: whitesmoke;
+    margin: 3px;
+    
+}
+
+.loader1 {
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.loader2 {
+    animation: loading 1s ease-in-out infinite alternate 0.4s;
+}
+
+.loader3 {
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+.mainClass {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipDisplay, .locationDisplay, .geoDisplay, .countryDisplay {
+    font-size: calc(2rem + 1vw);
+    color: whitesmoke;
+    margin: 0.7rem;
+}
+
+.getAddress {
+    border: none;
+    margin: 0.5rem;
+    background: #2ed573;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+
+.getAddress:hover {
+    opacity: 0.6;
+}
+
+@keyframes loading {
+    From {
+            transform: scale(1);
+    }
+    To {
+            transform: scale(1.3);
+    }
+}
